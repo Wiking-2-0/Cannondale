@@ -1,0 +1,108 @@
+body{
+	font-family: 'Nova';
+	font-size: 16px;
+	line-height: 1.4;
+	font-weight: 400;
+	font-style: normal;
+	color: #333333;
+	min-height: 100vh;
+	a{
+		color: #FFF;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.page-title{
+		position: relative;
+		font-size: 40px;
+		font-weight: 900;
+		color: #000;
+		text-transform: uppercase;
+		text-align: center;
+		&.block-decor-top{
+			padding-top: 10px;
+		}
+	}
+	.page-subtitle{
+		@extend .page-title;
+		font-size: 30px;
+		margin-bottom: 20px;
+		font-weight: 400;
+		&.block-decor-top{
+			margin-top: 20px;
+			padding-top: 10px;
+			&:before{
+				height: 2px;
+			}
+		}
+	}
+	.more-info{
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 200;
+		color: #FFF;
+		padding: 3px 35px;
+		padding-bottom: 5px;
+		border: 1px solid #FFF;
+		border-radius: 15px;
+		cursor: pointer;
+		&:hover{
+			background-color: #fff;
+			color: #000;
+		}
+	}
+	.dark-bg{
+		position: relative;
+		z-index: 0;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+			background-color: rgba(0,0,0,0.4);
+		}
+	}
+	.block-decor-top,
+	.block-decor-bottom{
+		position: relative;
+		&:after,
+		&:before{
+			position: absolute;
+			left: 50%;
+			margin-left: -28px;
+			width: 56px;
+			height: 5px;
+			background-color: #000;
+		}
+	}
+	.block-decor-top{
+		margin-top: 40px;
+		padding-top: 20px;
+		&:before{
+			content: '';
+			top: 0;
+		}
+	}
+	.block-decor-bottom{
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+		&:after{
+			content: '';
+			bottom: 0;
+		}
+	}
+
+	@media only screen and (max-width: 992px) {
+		h2.title-decor{
+			font-size: 36px;
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		h2.title-decor{
+			font-size: 30px;
+		}
+	}
+}

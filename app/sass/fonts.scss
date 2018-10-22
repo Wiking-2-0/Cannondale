@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Nova';
+    src: url('subset-ProximaNova-Light.woff2') format('woff2'),
+        url('subset-ProximaNova-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nova';
+    src: url('subset-ProximaNova-Black.woff2') format('woff2'),
+        url('subset-ProximaNova-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nova';
+    src: url('subset-ProximaNova-Regular.woff2') format('woff2'),
+        url('subset-ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nova';
+    src: url('subset-ProximaNovaT-Thin.woff2') format('woff2'),
+        url('subset-ProximaNovaT-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+

@@ -1,0 +1,113 @@
+.faq{
+	&-content{
+		details{
+			margin-bottom: 20px;
+			summary{
+				position: relative;
+				padding-left: 80px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-radius: 10px;
+				font-size: 22px;
+				text-transform: uppercase;
+				background-color: #f5f5f5;
+				&:after{
+					content: "";
+					position: absolute;
+					right: 24px;
+					top: 17px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 14px 8px 0;
+					border-color: #5d5d5d transparent transparent;
+					z-index: 5;
+				}
+				&::-webkit-details-marker {
+					display: none;
+				}
+				&:focus{
+					outline: none;
+				}
+			}
+			&[open]{
+				summary{
+					background-color: #9dcce6;
+					&:after {
+						border-width: 0 8px 14px;
+						border-color: transparent transparent #5d5d5d;
+					}
+					&:before{
+						content: '';
+						position: absolute;
+						left: 43px;
+						top: 100%;
+						width: 0;
+						height: 0;
+						border: 0 solid transparent;
+						border-top-width: 0px;
+						border-bottom-width: 35px;
+						border-right: 55px solid #dddcdc;
+						-webkit-transform: skewX(65deg);
+						-ms-transform: skewX(65deg);
+						-o-transform: skewX(65deg);
+						transform: skewX(65deg);
+					}
+				}
+			}
+			&:focus{
+				outline: none;
+			}
+			p{
+				padding-left: 150px;
+				padding-top: 25px;
+				padding-bottom: 20px;
+				font-size: 18px;
+				font-weight: 400;
+			}
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		&-content{
+			details{
+				summary{
+					font-size: 18px;
+					padding-left: 30px;
+					padding-right: 40px;
+				}
+				p{
+					font-size: 14px;
+					padding-left: 65px;
+				}
+				&[open]{
+					summary:before{
+						left: 20px;
+						border-bottom-width: 35px;
+						border-right-width: 25px;
+						-webkit-transform: skewX(35deg);
+						-ms-transform: skewX(35deg);
+						-o-transform: skewX(35deg);
+						transform: skewX(35deg);
+					}
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		&-content{
+			details{
+				summary{
+					font-size: 16px;
+				}
+				p{
+					padding-left: 30px;
+				}
+				&[open]{
+					summary:before{
+						content: none;
+					}
+				}
+			}
+		}
+	}
+}

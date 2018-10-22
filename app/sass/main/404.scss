@@ -1,0 +1,46 @@
+.wrong-page{
+	padding-top: 140px;
+	padding-bottom: 140px;
+	background-image: url(../img/wrong-page-bg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	.container{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	img{
+		width: 470px;
+		height: 47px;
+	}
+	.page-title{
+		margin-bottom: 30px;
+	}
+	p{
+		margin-bottom: 30px;
+		font-size: 30px;
+		font-weight: 300;
+		text-align: center;
+	}
+	.more-info{
+		border-color: #555555;
+		font-size: 18px;
+		color: #555555;
+		&:hover{
+			background-color: $active-color;
+			color: #fff;
+			border-color: $active-color;
+		}
+	}
+}

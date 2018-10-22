@@ -1,0 +1,85 @@
+.popup {
+  /*display: none;*/
+  position: static;
+  top: 0;
+  margin: 0 auto;
+  width: 400px;
+  height: 300px;
+  /*padding-top: 30px;*/
+  padding-bottom: 20px;
+  background-image: url(../img/popup-bg.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .popup-close {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    top: 20px;
+    right: -369px;
+    cursor: pointer; }
+    .popup-close::after, .popup-close::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 3px;
+      border-radius: 4px;
+      background-color: #fff; }
+    .popup-close::after {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .popup-close::before {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  .popup h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px; }
+  .popup-form {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+  .popup input, .popup textarea {
+    display: inline-block;
+    background-color: #fff;
+    padding-left: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    font-size: 12px;
+    margin-bottom: 10px; }
+  .popup input[name="name"] {
+    width: 30%;
+    margin-right: 3%; }
+  .popup input[name="phone"] {
+    width: 65%; }
+  .popup input[name="email"] {
+    width: 99%; }
+  .popup textarea {
+    width: 99%;
+    height: 85px;
+    resize: none; }
+  .popup button {
+    width: 119px;
+    height: 37px;
+    color: #ffffff;
+    background-color: #0099ff;
+    border: 0 none;
+    padding: 0;
+    border-radius: 8px; }
+    .popup button:hover {
+      background-color: #ff9900; }

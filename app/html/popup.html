@@ -1,0 +1,18 @@
+<section class="popup-buy">
+	<span class="popup-buy-close"></span>
+	<span class="popup-buy-title">форма зворотнього зв’язку</span>
+	<form class="popup-buy-form js-form">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="<?php echo get_option('blogname'); ?>">
+		<input type="hidden" name="admin_email" value="<?php echo get_option('admin_email'); ?>">
+		<input type="hidden" name="form_subject" value="Заявка с сайта <?php echo get_option('blogname'); ?>">
+		<!-- END Hidden Required Fields -->
+
+		<input type="text" name="name" placeholder="Ім'я">
+		<input type="tel" name="phone" placeholder="Телефон" required>
+		<input type="email" name="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+		<textarea name="comment" placeholder="Коментар"></textarea>
+		<button class="more-info" type="submit" value="go">Відправити</button>
+	</form>
+</section>

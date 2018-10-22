@@ -1,0 +1,132 @@
+.choice-map{
+	position: relative;
+	top: 80px;
+	left: 30px;
+	width: 350px;
+	height: 40px;
+	padding-left: 15px;
+	background-color: #fff;
+	border: 0;
+	border-radius: 20px;
+	z-index: 10;
+	&:focus{
+		outline: none;
+	}
+	option{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border: 0;
+		border-radius: 15px;
+	}
+}
+.contacts{
+	padding-top: 30px;
+	img{
+		width: 100%;
+		height: 440px;
+		object-fit: cover;
+		object-position: center;
+	}
+	&+.footer{
+		margin-top: 0;
+		&:before{
+			content: none;
+		}
+	}
+}
+.contact-feedback{
+	padding-top: 30px;
+	/* background-image: url(../img/feedback-bg.jpg); */
+	-ms-background-position-y: bottom;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-bottom: 30px;
+	margin-bottom: 130px;
+	.page-subtitle{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	form{
+		width: 50%;
+		margin: 0 auto;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		input,textarea{
+			height: 40px;
+			padding-left: 15px;
+			margin-bottom: 10px;
+			background-color: #efefef;
+			font-size: 18px;
+			font-weight: 200;
+			color: #000;
+			border: 0;
+			border-radius: 12px;
+			&::-moz-placeholder,
+			&:-moz-placeholder,
+			&::-webkit-input-placeholder,
+			&:-ms-input-placeholder{
+				color: #000;
+			}
+			&:active,&:focus{
+      outline: none;
+    }
+		}
+		input[name="name"]{
+			width: 47%;
+			margin-right: 5%;
+		}
+		input[name="phone"]{
+			width: 47%;
+		}
+		input[name="email"]{
+			width: 99%;
+		}
+		textarea{
+			width: 99%;
+			height: 85px;
+			padding-top: 8px;
+			resize: none;
+		}
+		button{
+			margin-top: 20px;
+			font-size: 20px;
+			border-color: #555555;
+			color: #555555;
+			background-color: transparent;
+			&:hover{
+				background-color: #555555;
+				color: #FFF;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		form{
+			width: 70%;
+			input[name="name"]{
+				width: 99%;
+				margin-right: 0;
+			}
+			input[name="phone"]{
+				width: 99%;
+			}
+		}
+	}
+	@media only screen and (max-width: 500px) {
+		form{
+			width: 100%;
+		}
+	}
+}

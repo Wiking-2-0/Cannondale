@@ -1,0 +1,28 @@
+@import "../libs/magnific-popup/dist/magnific-popup.scss";
+@import "../libs/bootstrap/dist/css/bootstrap.min.scss";
+@import "../libs/owl.carousel/dist/assets/owl.carousel.min.scss";
+
+@import "fonts.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "main.scss";
+@import "main/popup.scss";
+@import "main/breadcrumbs.scss";
+@import "main/index.scss";
+@import "main/seo.scss";
+
+@import "header/header.scss";
+@import "header/header-slider.scss";
+
+@import "main/category.scss";
+@import "main/feedback.scss";
+
+@import "main/blog.scss";
+@import "main/news-page.scss";
+@import "main/catalog-page.scss";
+@import "main/contacts.scss";
+@import "main/product.scss";
+@import "main/404.scss";
+@import "main/content-page.scss";
+
+@import "footer/footer.scss";

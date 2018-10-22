@@ -1,0 +1,235 @@
+.footer{
+	position: relative;
+	background-color: #303030;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 125px;
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		right: 0;
+		width: 50%;
+		height: 124px;
+		background-image: url(../img/footer-decor-2.png);
+		background-repeat: no-repeat;
+		-webkit-background-size: 100% auto;
+		background-size: 100% auto;
+		background-position: left bottom;
+		z-index: -1;
+	}
+	a{
+		color: #fff;
+	}
+	.container{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		-ms-align-items: center;
+		align-items: center;
+		&:after,
+		&:before{
+			content: none;
+		}
+	}
+	&-social{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		padding-right: 20px;
+		img{
+			width: 270px;
+			height: 30px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		.header-social-list{
+			position: relative;
+			padding: 20px;
+			padding-bottom: 30px;
+			border-top: 1px solid rgba(255,255,255,0.2);
+		}
+		.more-info{
+			display: block;
+			font-size: 19px;
+		}
+	}
+	&-menu{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		border-right: 1px solid #FFF;
+		border-left: 1px solid #FFF;
+		padding-left: 8%;
+		padding-right: 8%;
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			/*width: 50%;*/
+			&:first-child{
+				padding-right: 60px;
+			}
+		}
+		&-item{
+			a{
+				display: inline-block;
+				padding-bottom: 15px;
+				font-size: 18px;
+				line-height: 24px;
+				font-weight: 200;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	&-subscribe{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		padding-left: 20px;
+		text-align: center;
+		color: #FFF;
+		img{
+			width: 40px;
+			height: 40px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		p{
+			font-size: 20px;
+			font-weight: 200;
+			margin: 0 auto;
+			margin-bottom: 15px;
+			width: 85%;
+		}
+		input{
+			width: 275px;
+			height: 36px;
+			font-size: 18px;
+			color: #505050;
+			border: 0;
+			padding-left: 15px;
+			margin-bottom: 20px;
+			border-radius: 12px;
+			background-color: rgba(255,255,255,0.7);
+		}
+		.more-info{
+			display: block;
+			font-size: 19px;
+		}
+	}
+
+
+	@media only screen and (max-width: 1200px) {
+		&-menu{
+			width: 45%;
+			padding-left: 5%;
+			padding-right: 5%;
+			&-item{
+				a{
+					font-size: 16px;
+				}
+			}
+		}
+		&-subscribe{
+			p{
+				font-size: 16px;
+			}
+			input{
+				width: 250px;
+			}
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		&-social{
+			img{
+				width: 240px;
+				height: 26px;
+			}
+		}
+		&-menu{
+			width: auto;
+			padding-left: 2%;
+			padding-right: 2%;
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		padding-top: 20px;
+		.container{
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+		}
+		&-social{
+			margin-bottom: 20px;
+			padding-right: 0;
+			img{
+				width: 230px;
+				height: auto;
+				margin-top: 5px;
+				margin-bottom: 15px;
+			}
+			.header-social-list{
+				padding-top: 10px;
+				padding-bottom: 15px;
+			}
+			.more-info{
+				font-size: 16px;
+			}
+		}
+		&-menu{
+			border: 0 none;
+			margin-bottom: 20px;
+			&-item{
+				a{
+					font-size: 16px;
+					padding-bottom: 5px;
+				}
+			}
+		}
+		&-subscribe{
+			padding-left: 0;
+			img{
+				margin-bottom: 10px;
+			}
+			input{
+				width: 218px;
+			}
+			.more-info{
+				font-size: 16px;
+			}
+		}
+	}
+	@media only screen and (max-width: 500px) {
+	}
+}
+
+
+
